@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: externalprojects
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: argocd
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: .
+    repoURL: https://github.com/telliott-io/externalprojects
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
