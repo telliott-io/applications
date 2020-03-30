@@ -15,4 +15,5 @@ spec:
     repoURL: https://github.com/telliott-io/emojicode-playground-deploy
     targetRevision: HEAD
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true

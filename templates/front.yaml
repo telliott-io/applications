@@ -15,4 +15,5 @@ spec:
     repoURL: https://github.com/telliott-io/front
     targetRevision: deploy
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
