@@ -13,7 +13,7 @@ spec:
   source:
     path: .
     repoURL: https://github.com/telliott-io/blogarchive
-    targetRevision: HEAD
+    targetRevision: deploy
   syncPolicy:
     automated:
       prune: true
