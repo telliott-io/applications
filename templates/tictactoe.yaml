@@ -15,7 +15,7 @@ spec:
         repoURL: https://theothertomelliott.github.io/tic-tac-toverengineered/
         targetRevision: HEAD
     syncPolicy:
-        automated:
+      automated:
         prune: true
     helm:
         parameters:
