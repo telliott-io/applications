@@ -20,7 +20,7 @@ spec:
     helm:
         parameters:
         - name: "hostname"
-            value: tictactoe.telliott.io
+            value: "tictactoe.telliott.io"
             forceString: true
         - name: "routes.web"
             value: "/"
