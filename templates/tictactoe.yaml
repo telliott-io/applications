@@ -19,12 +19,6 @@ spec:
           - name: "hostname"
             value: "tictactoe.telliott.io"
             forceString: true
-          - name: "routes.web"
-            value: "/"
-            forceString: true
-          - name: "routes.api"
-            value: "/api/"
-            forceString: true
     syncPolicy:
       automated:
         prune: true
