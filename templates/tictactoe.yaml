@@ -18,13 +18,13 @@ spec:
       automated:
         prune: true
     helm:
-        parameters:
-        - name: "hostname"
-          value: "tictactoe.telliott.io"
-          forceString: true
-        - name: "routes.web"
-          value: "/"
-          forceString: true
-        - name: "routes.api"
-          value: "/api/"
-          forceString: true
+      parameters:
+      - name: "hostname"
+        value: "tictactoe.telliott.io"
+        forceString: true
+      - name: "routes.web"
+        value: "/"
+        forceString: true
+      - name: "routes.api"
+        value: "/api/"
+        forceString: true
