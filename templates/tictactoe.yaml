@@ -14,17 +14,17 @@ spec:
         path: .
         repoURL: https://github.com/theothertomelliott/tic-tac-toverengineered.git
         targetRevision: argocd
-          helm:
-            parameters:
-            - name: "hostname"
-              value: "tictactoe.telliott.io"
-              forceString: true
-            - name: "routes.web"
-              value: "/"
-              forceString: true
-            - name: "routes.api"
-              value: "/api/"
-              forceString: true
+        helm:
+          parameters:
+          - name: "hostname"
+            value: "tictactoe.telliott.io"
+            forceString: true
+          - name: "routes.web"
+            value: "/"
+            forceString: true
+          - name: "routes.api"
+            value: "/api/"
+            forceString: true
     syncPolicy:
       automated:
         prune: true
