@@ -20,11 +20,11 @@ spec:
     helm:
         parameters:
         - name: "hostname"
-            value: "tictactoe.telliott.io"
-            forceString: true
+          value: "tictactoe.telliott.io"
+          forceString: true
         - name: "routes.web"
-            value: "/"
-            forceString: true
+          value: "/"
+          forceString: true
         - name: "routes.api"
-            value: "/api/"
-            forceString: true
+          value: "/api/"
+          forceString: true
