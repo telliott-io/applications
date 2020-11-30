@@ -28,3 +28,8 @@ spec:
       - name: "routes.api"
         value: "/api/"
         forceString: true
+      values: |
+        hostname: tictactoe.telliott.io
+        routes:
+            api: /api/
+            web: /
