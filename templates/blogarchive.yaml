@@ -14,9 +14,6 @@ spec:
     path: .
     repoURL: https://github.com/telliott-io/blogarchive
     targetRevision: deploy
-    helm:
-      values: |
-        domain: {{ .Values.domain }}
   syncPolicy:
     automated:
       prune: true
