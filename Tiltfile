@@ -22,6 +22,20 @@ helm_resource(
     port_forwards=["8080:8080"]
 )
 
+# Set up Traefik
+helm_repo('traefik-repo', 'https://helm.traefik.io/traefik')
+helm_resource(
+    'traefik-resource', 
+    'traefik-repo/traefik',
+    namespace="traefik",
+    flags=[
+        "--create-namespace",
+        "--set",
+        "dashboard.enable=true"
+    ],
+   port_forwards=["9000:9000","8000:8000"]
+)
+
 # Install this chart
 helm_resource(
     "applications",
